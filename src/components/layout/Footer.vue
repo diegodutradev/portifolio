@@ -81,10 +81,10 @@ import { Icon } from '@iconify/vue'
 const currentYear = computed(() => new Date().getFullYear())
 
 const socialLinks = [
-  { name: 'GitHub', icon: 'mdi:github', url: 'https://github.com/yourusername' },
-  { name: 'LinkedIn', icon: 'mdi:linkedin', url: 'https://linkedin.com/in/yourusername' },
-  { name: 'WhatsApp', icon: 'mdi:whatsapp', url: 'https://twitter.com/yourusername' },
-  { name: 'Email', icon: 'mdi:email', url: 'mailto:john.doe@example.com' }
+  { name: 'GitHub', icon: 'mdi:github', url: 'https://github.com/diegodutradev' },
+  { name: 'LinkedIn', icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/diego-dutra-9b7b07233/' },
+  { name: 'WhatsApp', icon: 'mdi:whatsapp', url: 'https://wa.me/61983362270' },
+  { name: 'Email', icon: 'mdi:email', url: 'mailto:diego.dutradev@gmail.com' }
 ]
 
 const quickLinks = [

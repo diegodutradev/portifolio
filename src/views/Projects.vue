@@ -80,7 +80,7 @@ import { projects, categories, type Project } from '../data/projects'
 const selectedCategory = ref('Todos')
 const showModal = ref(false)
 const selectedProject = ref<Project | null>(null)
-const loading = ref(false)
+// const loading = ref(false)
 
 const filteredProjects = computed(() => {
   if (selectedCategory.value === 'Todos') {
@@ -94,12 +94,12 @@ const openProjectModal = (project: Project) => {
   showModal.value = true
 }
 
-const loadMore = () => {
-  loading.value = true
-  // Simulate loading more projects
-  setTimeout(() => {
-    loading.value = false
-    // In a real app, you would fetch more projects here
-  }, 1000)
-}
+// const loadMore = () => {
+//   loading.value = true
+//   // Simulate loading more projects
+//   setTimeout(() => {
+//     loading.value = false
+//     // In a real app, you would fetch more projects here
+//   }, 1000)
+// }
 </script>
