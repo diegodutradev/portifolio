@@ -12,12 +12,11 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce API",
-    description: "RESTful API built with Node.js and Express, featuring user authentication, product management, and payment integration.",
+    title: "PAMPS - API RESTFUL ",
+    description: "Pamps é uma API de microblogs inspirada no antigo Twitter, onde usuários publicam posts curtos chamados pamps. Desenvolvida com FastAPI, utiliza PostgreSQL, autenticação JWT,  100% Dockerizado e testes automatizados com Pytest.",
     image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Node.js", "Express", "MongoDB", "JWT", "Stripe"],
-    githubUrl: "https://github.com/yourusername/ecommerce-api",
-    liveUrl: "https://api.yourproject.com",
+    technologies: ["FastAPI", "Docker", "PostgreSQL", "JWT", "Pytest"],
+    githubUrl: "https://github.com/diegodutradev/pamps",
     category: "Backend"
   },
   {
