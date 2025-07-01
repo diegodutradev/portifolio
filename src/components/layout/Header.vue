@@ -30,7 +30,7 @@
         <!-- Right side buttons -->
         <div class="flex items-center space-x-4">
           <!-- Dark mode toggle -->
-          <n-button
+          <!-- <n-button
             quaternary
             circle
             @n-click="toggleDarkMode"
@@ -42,7 +42,7 @@
                 class="w-5 h-5"
               />
             </template>
-          </n-button>
+          </n-button> -->
 
           <!-- Mobile menu button -->
           <n-button
@@ -84,10 +84,10 @@
 import { ref } from 'vue'
 import { NButton } from 'naive-ui'
 import { Icon } from '@iconify/vue'
-import { useDark, useToggle } from '@vueuse/core'
+// import { useDark, useToggle } from '@vueuse/core'
 
-const isDark = useDark()
-const toggleDarkMode = useToggle(isDark)
+// const isDark = useDark()
+// const toggleDarkMode = useToggle(isDark)
 
 const mobileMenuOpen = ref(false)
 
