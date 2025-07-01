@@ -35,7 +35,7 @@ export const projects: Project[] = [
     image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
     technologies: ["Python", "Selenium"],
     githubUrl: "https://github.com/diegodutradev/salvar_contatos_wpp",
-    category: "Backend"
+    category: "Automação"
   },
   {
     id: 4,
