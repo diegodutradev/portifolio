@@ -21,24 +21,6 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Automação de envio de imagens em massa no WhatsApp",
-    description: "Automação que permite encaminhar uma imagem pré-definida para milhares de contatos via WhatsApp. Projeto modular com envio em lotes e pausas aleatórias para evitar possíveis bloqueios e simular o comportamento humano.",
-    image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "Selenium"],
-    githubUrl: "https://github.com/diegodutradev/wpp-automation",
-    category: "Automação"
-  },
-  {
-    id: 3,
-    title: "Automação que salva contatos não salvos no WhatsApp",
-    description: "Automação que identifica todos os contatos não salvos no WhatsApp e cria um arquivo .CSV com todos para serem salvos de uma vez só.",
-    image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "Selenium"],
-    githubUrl: "https://github.com/diegodutradev/salvar_contatos_wpp",
-    category: "Automação"
-  },
-  {
-    id: 4,
     title: "Invista-Me - Crud com Django",
     description: "Invista-me é um app feito com Django para verificar e controlar seus gastos.",
     image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -47,13 +29,31 @@ export const projects: Project[] = [
     category: "Backend"
   },
   {
-    id: 5,
+    id: 3,
+    title: "Automação de envio de imagens em massa no WhatsApp",
+    description: "Automação que permite encaminhar uma imagem pré-definida para milhares de contatos via WhatsApp. Projeto modular com envio em lotes e pausas aleatórias para evitar possíveis bloqueios e simular o comportamento humano.",
+    image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
+    technologies: ["Python", "Selenium"],
+    githubUrl: "https://github.com/diegodutradev/wpp-automation",
+    category: "Automação"
+  },
+  {
+    id: 4,
     title: "BOOK API - API RESTFul",
     description: "Uma API REST criada com FASTAPI que possui função CRUD para livros.",
     image: "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=800",
     technologies: ["Python", "FastAPI", "PostgreSQL"],
     githubUrl: "https://github.com/diegodutradev/book_api",
     category: "Backend"
+  },
+  {
+    id: 5,
+    title: "Automação que salva contatos não salvos no WhatsApp",
+    description: "Automação que identifica todos os contatos não salvos no WhatsApp e cria um arquivo .CSV com todos para serem salvos de uma vez só.",
+    image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
+    technologies: ["Python", "Selenium"],
+    githubUrl: "https://github.com/diegodutradev/salvar_contatos_wpp",
+    category: "Automação"
   },
   // {
   //   id: 6,
