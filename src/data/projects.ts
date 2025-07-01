@@ -69,8 +69,8 @@ export const projects: Project[] = [
 export const categories = [
   "Todos",
   "Backend",
-  "Frontend", 
-  "Full Stack",
+  // "Frontend", 
+  // "Full Stack",
   "Automação",
   // "DevOps",
   // "Machine Learning"
