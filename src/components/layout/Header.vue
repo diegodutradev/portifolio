@@ -29,7 +29,8 @@
 
         <!-- Right side buttons -->
         <div class="flex items-center space-x-4">
-          <!-- Dark mode toggle -->
+          <!-- Dark mode toggle (comentado) -->
+          <!--
           <n-button
             quaternary
             circle
@@ -43,6 +44,7 @@
               />
             </template>
           </n-button>
+          -->
 
           <!-- Mobile menu button -->
           <n-button
@@ -81,19 +83,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { NButton } from 'naive-ui'
 import { Icon } from '@iconify/vue'
-import { useDark, useToggle } from '@vueuse/core'
 
-const isDark = useDark({
-  selector: 'html', // <-- aqui está o pulo do gato
-  storageKey: 'vueuse-color-scheme',
-  valueDark: 'dark',
-  valueLight: 'light',
+// Ativa o modo dark de forma fixa
+onMounted(() => {
+  document.documentElement.classList.add('dark')
 })
-
-const toggleDarkMode = useToggle(isDark)
 
 const mobileMenuOpen = ref(false)
 
@@ -106,7 +103,6 @@ const navigation = [
 </script>
 
 <style scoped>
-/* (Mantém seus estilos existentes sem alteração) */
 .nav-link {
   color: #4b5563;
   padding: 0.5rem 0.75rem;
