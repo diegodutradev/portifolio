@@ -63,7 +63,7 @@
       <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <p class="text-gray-500 dark:text-gray-400 text-sm">
-            © {{ currentYear }} Diego Dutra. Todos os Direitos Reservados.
+            © {{ currentYear }} Diego Dutra - Todos os Direitos Reservados.
           </p>
           <p class="text-gray-500 dark:text-gray-400 text-sm mt-2 md:mt-0">
             Desenvolvido com Vue.js e Tailwind CSS
