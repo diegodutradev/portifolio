@@ -33,7 +33,7 @@
           <n-button
             quaternary
             circle
-            @n-click="toggleDarkMode"
+            @click="toggleDarkMode"
             class="text-gray-600 dark:text-gray-300"
           >
             <template #icon>
@@ -87,10 +87,12 @@ import { Icon } from '@iconify/vue'
 import { useDark, useToggle } from '@vueuse/core'
 
 const isDark = useDark({
-  storageKey: 'vueuse-color-scheme', // nome opcional, pode mudar
+  selector: 'html', // <-- aqui está o pulo do gato
+  storageKey: 'vueuse-color-scheme',
   valueDark: 'dark',
   valueLight: 'light',
 })
+
 const toggleDarkMode = useToggle(isDark)
 
 const mobileMenuOpen = ref(false)
