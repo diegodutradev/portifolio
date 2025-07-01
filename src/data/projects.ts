@@ -21,51 +21,49 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Task Automation Bot",
-    description: "Python automation script that handles repetitive tasks, data processing, and report generation with scheduling capabilities.",
+    title: "AUTOMAÇÃO DE ENVIO DE IMAGENS EM MASSA ",
+    description: "Automação que permite encaminhar uma imagem pré-definida para milhares de contatos via WhatsApp. Projeto modular com envio em lotes e pausas aleatórias para evitar possíveis bloqueios e simular o comportamento humano.",
     image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "Selenium", "Pandas", "Celery", "Redis"],
-    githubUrl: "https://github.com/yourusername/automation-bot",
+    technologies: ["Python", "Selenium"],
+    githubUrl: "https://github.com/diegodutradev/wpp-automation",
     category: "Automação"
   },
   {
     id: 3,
-    title: "Real-time Chat Application",
-    description: "Full-stack chat application with WebSocket support, user authentication, and message history persistence.",
+    title: "AUTOMAÇÃO QUE SALVA CONTATOS NÃO SALVOS NO WHATSAPP",
+    description: "Automação que identifica todos os contatos não salvos no WhatsApp e cria um arquivo .CSV com todos para serem salvos de uma vez só.",
     image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Vue.js", "Socket.io", "Node.js", "PostgreSQL"],
-    githubUrl: "https://github.com/yourusername/chat-app",
-    liveUrl: "https://chat.yourproject.com",
-    category: "Full Stack"
+    technologies: ["Python", "Selenium"],
+    githubUrl: "https://github.com/diegodutradev/salvar_contatos_wpp",
+    category: "Backend"
   },
   {
     id: 4,
-    title: "Data Analytics Dashboard",
-    description: "Interactive dashboard for visualizing business metrics with real-time data updates and export functionality.",
+    title: "INVISTA-ME - CRUD COM DJANGO",
+    description: "Invista-me é um app feito com Django para verificar e controlar seus gastos.",
     image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["React", "D3.js", "Python", "FastAPI", "PostgreSQL"],
-    githubUrl: "https://github.com/yourusername/analytics-dashboard",
-    liveUrl: "https://dashboard.yourproject.com",
-    category: "Frontend"
+    technologies: ["Python", "Django", "Bootstrap", "PostgreSQL"],
+    githubUrl: "https://github.com/diegodutradev/invista-me",
+    category: "Backend"
   },
   {
     id: 5,
-    title: "Microservices Architecture",
-    description: "Scalable microservices system with Docker containerization, API gateway, and service mesh implementation.",
+    title: "BOOK API",
+    description: "Uma API REST criada com FASTAPI que possui função CRUD para livros.",
     image: "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Docker", "Kubernetes", "Go", "gRPC", "Consul"],
-    githubUrl: "https://github.com/yourusername/microservices",
-    category: "DevOps"
+    technologies: ["Python", "FastAPI", "PostgreSQL"],
+    githubUrl: "https://github.com/diegodutradev/book_api",
+    category: "Backend"
   },
-  {
-    id: 6,
-    title: "Machine Learning Pipeline",
-    description: "End-to-end ML pipeline for data preprocessing, model training, and deployment with monitoring capabilities.",
-    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "TensorFlow", "Apache Airflow", "MLflow", "AWS"],
-    githubUrl: "https://github.com/yourusername/ml-pipeline",
-    category: "Machine Learning"
-  }
+  // {
+  //   id: 6,
+  //   title: "Fazer depois",
+  //   description: "End-to-end ML pipeline for data preprocessing, model training, and deployment with monitoring capabilities.",
+  //   image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   technologies: ["Python", "TensorFlow", "Apache Airflow", "MLflow", "AWS"],
+  //   githubUrl: "https://github.com/yourusername/ml-pipeline",
+  //   category: "Machine Learning"
+  // }
 ]
 
 export const categories = [
