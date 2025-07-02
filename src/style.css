@@ -4,6 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #718096;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

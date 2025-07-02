@@ -28,8 +28,9 @@
           </h1>
           
           <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-6 animate-slide-up">
-            Desenvolvedor BackEnd
+            Desenvolvedor <span>{{ typedText }}</span><span class="blinking-cursor">|</span>
           </p>
+
           
           <p class="text-lg text-gray-500 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 0.2s;">
             Desenvolvo APIs escaláveis, automatizo fluxos de trabalho complexos e crio soluções backend eficientes que impulsionam aplicações modernas.
@@ -138,6 +139,50 @@
 import { NButton } from 'naive-ui'
 import { Icon } from '@iconify/vue'
 import { techStack } from '../data/skills'
+
+import { ref, onMounted } from 'vue'
+
+const words = ['Backend', 'Frontend', 'Fullstack']
+const typedText = ref('')
+let wordIndex = 0
+let charIndex = 0
+let isDeleting = false
+
+const TYPING_SPEED = 120
+const DELETING_SPEED = 60
+const PAUSE_AFTER_TYPING = 1000
+const PAUSE_AFTER_DELETING = 400
+
+function typeEffect() {
+  const currentWord = words[wordIndex]
+
+  if (isDeleting) {
+    typedText.value = currentWord.substring(0, charIndex--)
+  } else {
+    typedText.value = currentWord.substring(0, charIndex++)
+  }
+
+  let delay = isDeleting ? DELETING_SPEED : TYPING_SPEED
+
+  if (!isDeleting && charIndex === currentWord.length + 1) {
+    // Pausa ao final da palavra
+    delay = PAUSE_AFTER_TYPING
+    isDeleting = true
+    charIndex = currentWord.length - 1 // força voltar um para suavizar
+  } else if (isDeleting && charIndex < 0) {
+    isDeleting = false
+    wordIndex = (wordIndex + 1) % words.length
+    delay = PAUSE_AFTER_DELETING
+    charIndex = 0
+  }
+
+  setTimeout(typeEffect, delay)
+}
+
+onMounted(() => {
+  typeEffect()
+})
+
 
 const socialLinks = [
   { name: 'GitHub', icon: 'mdi:github', url: 'https://github.com/diegodutradev' },
